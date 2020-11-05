@@ -14,11 +14,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class EventVo {
-  private String id;
-  private String name;
-  private EventType type;
-  @JsonSerialize(using = TimeSerializer.class)
-  private Date time;
-  @JsonUnwrapped
-  private UserVo user;
+    private String id;
+    private String name;
+    private EventType type;
+    @JsonSerialize(using = TimeSerializer.class)
+    private Date time;
+    @JsonUnwrapped
+    private UserVo user;
 }
